@@ -1197,3 +1197,37 @@ footer {
 		margin-bottom: 30px;
 	}
 }
+@media (max-width: 250px) {
+	.default {
+		opacity: 1;
+	}
+	.navbar .navbar-brand {
+		font-weight: 900;
+		color: #fff;
+		margin: 15px 0 0 15px;
+		font-size: 20px;
+	}
+	.section {
+		padding:80px 0 40px 0;
+	}
+	section#intro{
+		padding:0;
+	}
+	.sy-caption-wrap {
+	  position: absolute;
+	  left: 0;
+	  text-align: center;
+	}
+	.sy-caption-wrap .sy-caption {
+		position: relative;
+		left:0;
+		text-align: center;
+		font-size: 18px;
+		color: #fff;
+		top: 30%;
+		line-height: 1.1em;
+	}
+	.col-md-6 {
+		margin-bottom: 30px;
+	}
+}
