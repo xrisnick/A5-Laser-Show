@@ -22,42 +22,11 @@
     google.maps.event.addDomListener(window, 'load', initialize_google_map);
     
 	//scroll to top
-	$(window).scroll(function(){
-		if ($(this).scrollTop() > 100) {
-			$('.scrollup').fadeIn();
-			} else {
-			$('.scrollup').fadeOut();
-		}
-	});
-	$('.scrollup').click(function(){
-		$("html, body").animate({ scrollTop: 0 }, 600);
-			return false;
-	});
-
-    $('.accordion').on('show', function (e) {
 	
-		$(e.target).prev('.accordion-heading').find('.accordion-toggle').addClass('active');
-		$(e.target).prev('.accordion-heading').find('.accordion-toggle i').removeClass('icon-plus');
-		$(e.target).prev('.accordion-heading').find('.accordion-toggle i').addClass('icon-minus');
-    });
-    
-    $('.accordion').on('hide', function (e) {
-        $(this).find('.accordion-toggle').not($(e.target)).removeClass('active');
-		$(this).find('.accordion-toggle i').not($(e.target)).removeClass('icon-minus');
-		$(this).find('.accordion-toggle i').not($(e.target)).addClass('icon-plus');
-    });	
 
      
 	//navigation
-	$('.navigation').onePageNav({
-		begin: function() {
-			console.log('start');
-		},
-		end: function() {
-			console.log('stop');
-		},
-			scrollOffset: 0		
-	});
+	
 	
 		// fancybox
 		$(".fancybox").fancybox({				
